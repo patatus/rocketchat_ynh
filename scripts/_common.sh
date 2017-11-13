@@ -13,7 +13,7 @@ waitforservice() {
 
 installdeps(){
 
-  if [ $(dpkg --print-architecture) == "armhf" ]; then
+  if [ $(dpkg --print-architecture) == "binary-armhf" ]; then
     #Install mongodb for debian armhf
     sudo apt-get update
     sudo apt-get install -y mongodb-server
